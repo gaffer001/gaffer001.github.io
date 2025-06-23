@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: black;
+    height: 52px;
+}
+
+nav a{
+    color: #fff;
+    text-decoration: none;
+    padding: 13px 23px;
+}
+#features{
+    color: yellowgreen;
+    font-weight: bold;
+    /* border-bottom: 2px solid yellowgreen; */
+   padding-bottom: 5px;
+}
+#features img{
+    transition: transform 0.3s;
+}
+#features:hover img{
+    transform: scale(1.03);
+}
+
+nav a:hover{
+    color: yellowgreen;
+}
+
+ ul{
+    list-style: none;
+    display: flex;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+}
+
+.hero{
+    align-content: center;
+    align-items: center;
+    height: 80dvh;
+    text-align: center;
+}
+
+.banner{
+    text-align: center;
+}
+
+.banner h1{
+    font-size: 5.5rem;
+    color: yellowgreen;
+}
+
+.banner p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#oo{
+    text-decoration: none;
+    color: green
+}
+
+#cc{
+    margin-bottom: 3rem;
+}
+
+.button{
+   margin: auto;
+   padding: 13px 23px;
+   background-color: yellowgreen; 
+   border-radius: 7px;
+   text-decoration: none;
+   margin-top: 4rem;
+   margin-bottom: 3rem;
+}
+
+.button:hover{
+    background-color: #333;
+    color: #fff;
+
+}
+
+.social-media p{
+    margin-top: 4rem;
+    color: brown;
+}
+
+.social-media ul{
+    align-items: center;
+    gap: .4rem;
+    text-align: center;
+    align-content: center;
+}
+span.ss{
+    background-image: linear-gradient(to right, rgb(209, 41, 153), green, blue);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.card-wrapper{
+    width: 93%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+
+}
+.card{
+    width: 18rem;
+    height: 14rem;
+    margin: auto;
+    padding: 7px;
+    box-shadow: 2px 2px 8px gainsboro;
+    border-radius: 10px;
+}
+
+.card-text{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.card:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+span.co{
+    background-color: green;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+span.okc{
+    background-color: blue;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+span.gg{
+    background-color: green;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+span.kk{
+   background-color: green;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+} 
+ 
+.FAQS{
+    width: 83%;
+    margin: auto;
+    border-radius: 7px;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+details{
+    width: 100%;
+    margin-bottom: 7px;
+    border-radius: 9px;
+    padding: 8px;
+    box-shadow: 2px 2px 3px gainsboro;
+    text-align: left; 
+}
+details>p{
+     background-color: gainsboro;
+     padding: 15px 9px;
+     border-radius: 7px;
+}
+#ffs{
+    font-size: 3rem;
+}
+
+
+footer ul{
+    text-align: center;
+    /* border: 1px solid red; */
+    justify-content: center;
+    padding: 23px 1px;
+    
+}

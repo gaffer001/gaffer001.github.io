@@ -1,0 +1,469 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    background-color: black;
+    height: 52px;
+    font-family: "Arial";
+}
+
+nav>div{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav>div>ul{
+    display: flex;
+    list-style: none;
+}
+
+nav a{
+    padding: 13px 23px;
+    text-decoration: none;
+}
+
+/* pseudo-selector for an element on cursor hoVer */
+nav ul li a:hover{
+    color: orangered;
+}
+
+nav button{
+    display: none;
+    padding: 5px;
+    background: none;
+    border: 0;
+    color: #fff;
+    margin: 9px;
+}
+
+.hero{
+    height: 70vh;
+    align-content: center;
+    /* border: 1px solid; */
+}
+
+.banner{
+    text-align: center;
+}
+
+.banner h1{
+    font-size: 4rem;
+    line-height: 6rem;
+    background: linear-gradient(to right, blueViolet, orange, skyblue);
+    background-size: 8px 8px;
+    background-repeat: repeat;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 3px 3px rgba(128, 128, 128, 0.14);
+    /* -webkit-box-reflect: below -15px; */
+}
+
+.card-wrapper{
+    width: 93%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.cards{
+    width: 18rem;
+    margin: auto;
+    padding: 7px;
+    box-shadow: 2px 2px 8px gainsboro;
+    border-radius: 10px;
+    transition: transform 1s ease-in-out;
+    
+}
+
+/*  */
+/* .cards:hover{ */
+    /* transform: rotate(45deg); */
+/* } */
+
+
+.cards:nth-child(1):hover{
+    transform: rotate(45deg);
+}
+
+
+.cards:nth-child(2):hover{
+    transform: skew(10deg);
+}
+
+
+.cards:nth-child(3):hover{
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+.card-body{
+    padding: 9px;
+}
+
+.cards img{
+    border-radius: 9px;
+    filter: grayscale(100%);
+    transition: filter .7s ease-in-out;
+}
+
+.cards img:hover{
+    filter: grayscale(0%);
+}
+
+.d-flex{
+    width: 86%;
+    display: flex;
+    margin: auto;
+    gap: 9px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+#bb{
+    border-radius: 15px;
+}
+
+.hint{
+    font-size: 2.4rem;
+    line-height: 4rem;
+}
+
+.lead{
+    font-weight: 400;
+    color: #101010;
+    font-family: cursive;
+}
+
+
+.faqs{
+    width: 33%;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+details{
+    width: 100%;
+    margin-bottom: 7px;
+    border-radius: 9px;
+    padding: 8px;
+    box-shadow: 2px 2px 3px gainsboro;
+}
+
+details>p{
+    background-color: gainsboro;
+    padding: 15px 9px;
+    border-radius: 7px;
+}
+
+.pointer{
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: rgba(255, 128, 0, 0.652);
+    position: fixed;
+}
+
+.grid-wrapper{
+    background-color: skyblue;
+    height: 100dvh;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 240px);
+    grid-template-rows: repeat(2, 240px);
+    justify-content: center;
+    align-content: center;
+}
+
+.box{
+    background-color: #333;
+    color: #fff;
+    border-radius: 1rem;
+    padding: 8px;
+   
+}
+
+span.dd-highlight {
+    background-image: linear-gradient(to right, rgb(248, 171, 94) 0px, rgb(243, 105, 97) 20%, rgb(161, 118, 200) 40%, rgb(117, 155, 235) 60%, rgb(101, 190, 179) 80%, rgb(112, 219, 150) 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.box:nth-child(1){
+    /* grid-column-start: span 2; */
+}
+
+.box:nth-child(5){
+    /* grid-column-start: span 2; */
+    transition: clip-path 500ms ease-in-out;
+}
+.box:nth-child(5):hover{
+    clip-path: circle(50% at 75% 50%);
+}
+
+.box:nth-child(3){
+    transition: background-image 5s ease-in-out;
+    background-image: radial-gradient(circle farthest-corner, rgba(71, 71, 215, 0.396) 35%, rgba(111, 111, 219, 0.439) 65%);
+}
+.box:nth-child(3):hover{
+    /* grid-row-start: span 2; */
+    background-image: radial-gradient(circle farthest-corner, rgba(146, 146, 218, 0.326) 65%, rgba(164, 164, 232, 0.177) 35%);
+    width: 18rem;
+    backdrop-filter: blur(8.7px);
+    color: red;
+}
+
+
+.clip{
+    display: flex;
+    height: 75vh;
+}
+
+.clip>div{
+    height: 100%;
+    width: 50%;
+}
+
+.clip>div:nth-child(1){
+  background-image: url('./1848973.png');
+  background-size: cover;
+  background-position: center;
+  clip-path: circle(50% at 12% 23%);
+}
+
+
+
+
+
+
+/* css transitions, transformation, text/font properties, css animation, background */
+
+/* css transformations */
+.transformations{
+    width: 18rem;
+    height: 18rem;
+    padding: 20px;
+    background-color: crimson;
+    color: whitesmoke;
+    transition: transform 2s ease-in;
+}
+.transformations:hover{
+    transform: translate3d(10px, 105px, 105px)
+}
+
+/* profile styling */
+.profile{
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    background-color: skyblue;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+     /* perspective: 1500px; */
+     transform: perspective(1500px);
+}
+
+.profile-card{
+    width: 30%;
+    background-color: #efefef;
+    padding: 2rem;
+    border-radius: 1.3rem;
+    box-shadow: 8px 8px 0px rgba(30, 30, 30, 0.391);
+    overflow: hidden;
+    /* transform: perspective(1500px); */
+    font-size: 24px !important;
+   
+     &:hover{ 
+         background-color: #0e1225; 
+         transform-style: preserve-3d; 
+         transform: rotateY(180deg) translateX(350px) skew(30deg); 
+
+     } 
+}
+/* .profile-card{ */
+    /* font-size: 9px; */
+/* } */
+
+.profile strong{
+    font-weight: 500;
+    /* font-size: 20px; */
+    color: olive;
+    text-shadow: 2px 2px 3px gray;
+}
+
+.profile .role{
+    font-weight: 500;
+    font-size: 16px;
+    color: olivedrab;
+     text-shadow: 2px 2px 4px gray;
+}
+
+.desc{
+    margin: 1.45rem 0px;
+    /* font-size: 14px; */
+    color: gray;
+    font-weight: 700;
+}
+
+.mysocials{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+     gap: .8rem;
+}
+
+.mysocials>li a{
+    /* margin: .8rem; */
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    background-color: olive;
+    padding: 4px;
+    align-content: center;
+    text-align: center;
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: 4px 4px 4px rgba(30, 30, 30, 0.51), inset 2px 2px 3px rgba(41, 41, 41, 0.19);
+   
+}
+
+.profile-thumbnail{
+    display: block;
+    width: 108px;
+    height: 108px;
+    border-radius: 50%;
+    margin: auto;
+     &:hover{
+     background-color: #0e1225;
+     transform-style: preserve-3d;
+     transform: rotateY(45deg);
+ }
+}
+
+.profile-body{
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.animation-block{
+    height: 100dvh;
+    width: 100%;
+    /* background-color: #021e02; */
+    background-image: url(kkk.JPG);
+    background-color: rgba(255, 255, 255, 0.777);
+    /* background-blend-mode: overlay; */
+
+    overflow-x: hidden;
+    
+}
+
+.animate{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-color: rgba(251, 248, 248, 0.035);
+    backdrop-filter: blur(10px);
+    border-top: 2px solid red;
+    border-bottom: 3px solid blue;
+    /* animation possiblevalues includes:: aniation-iteration=how many times the occurs, animation-delay: amount time before the onset of the animation, animation-duration::how long certain animations lasts, animation-name/[identifier]: the identifier/ref to animated elem in the keyframes, animation-behaor::this is how the animation progresses. */
+    animation: bounce 10s linear infinite;
+    animation-delay: 5s;
+}
+
+@keyframes bounce{
+    0%{
+        transform: translateY(20%) translateX(10%);
+    }
+    17%{
+         transform: translateY(40%) translateX(30%);
+    }
+
+    27%{
+         transform: translateY(70%) translateX(850%);
+    }
+
+    70%{
+         transform: translateY(100%) translateX(100%);
+    }
+
+
+    100%{
+         transform: translateY(0%) translateX(0%);
+    }
+}
+
+@media only screen and (max-width: 768px){
+    nav>diV>ul{
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 75%;
+        background-color: black;
+        height: 100dvh;
+        z-index: 9;
+
+    }
+
+    nav>diV>ul::before{
+        content: '';
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        background-color: rgba(0,0,0,.6);
+        z-index: -1;
+    }
+
+    nav button{
+        display: block;
+    }
+
+    .d-sm-none{
+        display: none;
+    }
+
+
+    nav ul li a{
+        display: block;
+    }
+
+    .cards{
+        width: 93%;
+    }
+
+
+    .d-flex{
+        flex-direction: column;
+    }
+
+    .faqs{
+        width: 93%;
+    }
+
+
+    .clip{
+        flex-direction: column;
+    }
+
+    .clip>div{
+        width: 93%;
+        margin: auto;
+    }
+
+    .profile-card{
+        width: 93%;
+    }
+ 
+}

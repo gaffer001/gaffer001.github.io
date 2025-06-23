@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- <meta charset="UTF-8"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>CSS3 intro</title>
+    <link rel="stylesheet" href="extrawork.css">
+
+    <style>
+
+        /* class selector ref = .class_name */
+        /* id selector ref = #id_name */
+        /* element selector = tagname */
+        /* others = [ATTR=ATTR::VALUE] */
+        /* wildcard * =uniVersal selector */
+
+        /* UniVersal Selector */
+
+        /* *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+
+        } */
+
+
+
+        /* elem::selector */
+
+        /* section{
+            text-align: center;
+        } */
+        /* nav{
+            background-color: black;
+        } */
+
+        /* class::selector */
+        /* .hero{
+            color: olive;
+        } */
+
+        /* id::selector */
+
+        /* #hero{
+            background-color: coral;
+        } */
+
+        /* [DATA-ATTR::Selector] */
+
+        /* [data-name='hero']{
+            text-align: right;
+        } */
+
+        /* [download='okeke']{
+            padding: 13px 23px;
+            background-color: orangered;
+            border-radius: 9px;
+        } */
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="pointer"></div>
+
+    <!-- @naVbar component -->
+    <nav>
+        <div>
+            <a href="">BRAND</a>
+            <button type="button" class="menuBtn">≡</button>
+
+            <ul class="offcanVas d-sm-none">
+                <li>
+                    <button type="button" class="menuBtn" style="margin-left:auto;">X</button>
+                 
+                </li>
+               
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">SerVices</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#faqs">FAQs</a></li>
+            </ul>
+            
+        </div>
+    </nav>
+    <!-- @endof naVbar -->
+
+    <!-- 
+        web safe::fonts
+        eg:
+        Arial, Verdana, Segoe ui, HelVetica, Trebuchet ms, cursiVe, times new roman,
+        monospace, fantasy, georgia, et.c
+
+        css unit
+        // absolute = mm,cm,in, px, pc, pt 
+        **********************************************
+        //1px ~ 1/96th of 1inch = 0.0104 inch
+        //1pt ~ 1/72th of 1inch = 0.014 inch
+        //1pc ~ 12pt = 0.014*12 ~ 0.17 inch
+
+
+
+        //RelatiVe units::=
+        ***********************************************
+        //rem = relatiVe to root element;
+        //em = relatiVe document body
+        //% = relatiVe to element's parent
+        //Vw = relatiVe 1% of the Viewport width;
+        //Vh = relatiVe 1%of the Viewport height 
+
+
+     -->
+
+
+    <section class="hero home first_section page" id="hero" data-name = "hero">
+        <div class="banner">
+            <h1 >
+               <span class="dd-highlight">
+                Hello World!
+               </span> Dudes
+            </h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum dolore illum amet temporibus quia!
+            </p>
+            <p class="cta-container">
+                <a href="" class="cta" download="okeke">Get Started</a>
+            </p>
+        </div>
+    </section>
+
+<section>
+    <div class="card-wrapper">
+        <div class="cards">
+            <img src="./image1.png" alt="" width="100%">
+            <div class="card-body">
+                <h4 class="card-title">Products</h4>
+                <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, nisi?
+                </p>
+            </div>
+        </div>
+        <div class="cards">
+            <img src="./image1.png" alt="" width="100%">
+            <div class="card-body">
+                <h4 class="card-title">Products</h4>
+                <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, nisi?
+                </p>
+            </div>
+        </div>
+        <div class="cards">
+            <img src="./image1.png" alt="" width="100%">
+            <div class="card-body">
+                <h4 class="card-title">Products</h4>
+                <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, nisi?
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="d-flex">
+        <div class="w-50">
+            <img src="./image1.png" alt="" width="100%" id="bb">
+        </div>
+        <div class="w-50">
+            <h2 class="hint">
+                Welcome To EVery Day CSS3
+            </h2>
+            <p class="lead">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid consectetur et illo <span class="dd-highlight"> repudiandae asperiores</span> nesciunt sunt obcaecati itaque veniam in, sapiente nemo, quidem quaerat rem saepe a natus autem suscipit.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<section>
+    <div class="faqs" id="faqs">
+        <div>
+            <h2 style="text-align: center;">
+                Frequently Asked Questions
+            </h2>
+        </div>
+        <details>
+            <summary>How do l create an account?</summary>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque iure similique reprehenderit!
+            </p>
+        </details>
+        <details>
+            <summary>How do l create an account?</summary>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque iure similique reprehenderit!
+            </p>
+        </details>
+        <details>
+            <summary>How do l create an account?</summary>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque iure similique reprehenderit!
+            </p>
+        </details>
+        <details>
+            <summary>How do l create an account?</summary>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque iure similique reprehenderit!
+            </p>
+        </details>
+        <details>
+            <summary>How do l create an account?</summary>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque iure similique reprehenderit!
+            </p>
+        </details>
+    </div>
+</section>
+
+<!-- grid-box -->
+
+<section>
+    <div class="grid-wrapper">
+        <div class="box">
+            <div>
+                <div class="profile" style="display:flex;color: #fff;">
+
+                    <img src="./facebook.png" alt="profile image of john doe"
+                    width="38px" height="38px" style="border-radius: 50%;margin-right:1rem;"
+                    >
+
+                    <div>
+                        <strong style="display: block;">John Doe</strong>
+                        <p>UI/UX Designer</p>
+                    </div>
+                </div>
+                <div class="content" style="margin: 2rem 0px;">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias similique itaque sed dolores?
+                </div>
+            </div>
+        </div>
+        <div class="box">box-2</div>
+        <div class="box">box-3</div>
+        <div class="box">box-4</div>
+        <div class="box">box-5</div>
+       
+        
+    </div>
+</section>
+
+<section>
+    <div class="clip">
+        <div>
+
+        </div>
+        <div>
+            <h1>
+                Welcome To The Age Of Innovation
+            </h1>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi perferendis, minus molestias accusantium nemo harum maiores facilis aspernatur excepturi magni sed dignissimos voluptatibus soluta unde atque eligendi optio fugit nesciunt.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="transformations">
+        <div class="t-box">
+            <h2>Hello world!</h2>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="profile">
+        <div class="profile-card">
+            <div>
+                <img src="./profile.jpeg" alt="" class="profile-thumbnail">
+            </div>
+            <div class="profile-body">
+                <p class="about">
+                    <strong>John Doe</strong>
+                    <p>
+                        <b class="role">Full-Stack Web Developer</b>
+                    </p>
+                </p>
+
+                <!-- @endof about class -->
+                <p class="desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore commodi quisquam ipsa optio tempora reiciendis?
+                </p>
+                <p>
+                    <ul class="mysocials">
+                        <li><a href="">lkn</a></li>
+                        <li><a href="">Fb</a></li>
+                        <li><a href="">X</a></li>
+                        <li><a href="">GH</a></li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="animation-block">
+        <div class="animate"></div>
+    </div>
+</section>
+
+
+
+
+
+
+    <script>
+            document.querySelectorAll(".menuBtn")
+            .forEach((btn)=>{
+                btn.addEventListener('click', ()=>{
+                    document.querySelector(".offcanVas").classList.toggle('d-sm-none');
+                })
+            })
+
+            document.addEventListener("mousemove", (e)=>{
+                document.querySelector(".pointer").style.top = e.clientY+'px';
+                document.querySelector(".pointer").style.left = e.clientX+'px';
+            })
+    </script>
+    
+</body>
+
+
+</html>
